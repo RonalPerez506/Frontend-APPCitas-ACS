@@ -34,7 +34,7 @@ const FormulariomantServicios = () => {
         nombre: servicio,
       };
 
-      console.log("Formulario enviado");
+      console.log("Formulario enviado",formData);
 
       // Hacer la petición POST al backend de Laravel
       fetch("http://localhost:8000/api/crear-servicio", {

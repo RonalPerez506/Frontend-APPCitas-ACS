@@ -36,7 +36,8 @@ const FormularioEditar = () => {
       telefono: telefono,
     };
 
-    console.log("Formulario enviado");
+    console.log("Formulario enviado",formData);
+    console.log(`http://localhost:8000/api/actualizar-cliente/${id}`);
 
     // Hacer la petición POST al backend de Laravel
     fetch(`http://localhost:8000/api/actualizar-cliente/${id}`, {

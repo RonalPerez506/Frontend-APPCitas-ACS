@@ -52,6 +52,8 @@ const Formulario = () => {
       })
       .catch((error) => {
         console.error("Error al enviar el formulario:", error);
+        console.log('9898');
+        console.log(formData);
       });
   };
 

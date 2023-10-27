@@ -20,7 +20,7 @@ const FormularioCliente = () => {
         telefono: telefono,
       };
 
-      console.log("Formulario enviado");
+      console.log("Formulario enviado",formData);
 
       // Hacer la petición POST al backend de Laravel
       fetch("http://localhost:8000/api/crear-cliente", {
@@ -40,6 +40,7 @@ const FormularioCliente = () => {
             timer: 1500, // La alerta se cerrará automáticamente después de 1.5 segundos
           });
           console.log(data);
+          console.log(formData);
           setApellido("");
           setNombre("");
           setTelefono("");
